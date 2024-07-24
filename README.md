@@ -51,7 +51,7 @@ We have decided to use this Windows Server 2019 Standard Edition because it incl
 <img src = "https://imgur.com/ybu42JW.png" height="80%" width="80%" />
 
 ### Type of Installation: <br/>
-We are installing Windows Server from scratch so we'll select the custom installation option. <br/>
+We are installing Windows Server from scratch so we will select the custom installation option. <br/>
 <br/>
 <img src = "https://imgur.com/mHinV9K.png" height="80%" width="80%" />
 
@@ -67,6 +67,57 @@ After a restart Windows Server has been installed and we can create our default 
 <img src = "https://imgur.com/ghxkfVH.png" height="80%" width="80%" />
 
 ### Windows Server is Installed: <br/>
+Our domain controller virtual machine now has the correct operating system installed, next steps involve renaming the system, configuring the network adapters and installing Active Directory. <br/>
 <br/>
 <img src = "https://imgur.com/yJ1FYTh.png" height="80%" width="80%" />
+
+### Renaming this system: <br/>
+This is done by the following steps. <br/>
+<br/>
+Navigating to the start menu and selecting the settings option. <br/>
+<br/>
+<img src = "https://imgur.com/hSshFsj.png" height="80%" width="80%" />
+
+Then selecting "System". <br/>
+<br/>
+<img src = "https://imgur.com/GqHmjS1.png" height="80%" width="80%" /> 
+
+Scrolling to the bottom of the list and selecting the "About" setting. <br/>
+<br/>
+<img src = "https://imgur.com/SzVTKLz.png" height="80%" width="80%" />
+
+Scrolling down again and selecting the "Rename this PC" button. <br/>
+<br/>
+<img src = "https://imgur.com/nAPpeUA.png" height = "80%" width = "80%" />
+
+As this is our domain controller we will name it "DC" for simplicity. <br/>
+<br/>
+<img src = "https://imgur.com/eksqARG.png" height = "80%" width = "80%" />
+
+After selecting "Next" this page will be displayed. We will choose to restart later as we also need to configure the network adapters.<br/>
+<br/>
+<img src = "https://imgur.com/gbk6R8u.png" height = "80%" width = "80%" />
+
+### Configuring Network Adapters: <br/>
+Here we're going to be renaming our network adapters and configuring the internal adapter. <br/>
+<br/>
+First we will head to the settings page and select the "Network & Internet" option. <br/>
+<br/>
+<img src = "https://imgur.com/oSOwUxt.png" height="80%" width = "80%" /> 
+
+Next we will select "Change adapter options". <br/>
+<br/>
+<img src = "https://imgur.com/Dvsku6d.png" height="80%" width = "80%" /> 
+
+Here we can see our 2 network adapters. First we must identify which of these is the internal adapter. <br/>
+<br/>
+<img src = "https://imgur.com/vkn1FXF.png" height="80%" width = "80%" /> 
+
+To find the internal adapter, we should check the IP addresses of each one. To do this we will right click the first adapter and select "Status". <br/>
+<br/>
+<img src = "https://imgur.com/l6xyEtX.png" height="80%" width = "80%" /> 
+
+Then selecting "Details". <br/>
+<br/>
+<img src = "https://imgur.com/LJjo1qb.png" height="80%" width = "80%" /> 
 
