@@ -113,11 +113,37 @@ Here we can see our 2 network adapters. First we must identify which of these is
 <br/>
 <img src = "https://imgur.com/vkn1FXF.png" height="80%" width = "80%" /> 
 
-To find the internal adapter, we should check the IP addresses of each one. To do this we will right click the first adapter and select "Status". <br/>
+To find the internal adapter, we should check the IP configuration for each one. To do this we will right click the first adapter and select "Status". <br/>
 <br/>
 <img src = "https://imgur.com/l6xyEtX.png" height="80%" width = "80%" /> 
 
 Then selecting "Details". <br/>
 <br/>
 <img src = "https://imgur.com/LJjo1qb.png" height="80%" width = "80%" /> 
+
+The network adapter has a default gateway, meaning it can connect to external networks. Using NAT this adapter connects our internal network to the internet. The other adapter is dedicated to our internal network. However, we can confirm this by reviewing its IP configuration. <br/>
+<br/>
+<img src = "https://imgur.com/oXaPu44.png" height="80%" width = "80%" /> 
+
+The network adapter does not have a default gateway and has an APIPA-assigned IP address, indicating there is no DHCP server available.Also there isn't a DNS server configured. This all indicates that this adapter is for our internal network. <br/>
+<br/>
+<img src = "https://imgur.com/VUwkLUj.png" height="80%" width = "80%" /> 
+
+Now that we have identified the adapters we can rename and configure them. <br/>
+<br/>
+<img src = "https://imgur.com/LTNBPwF.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/8YNyQ4s.png" height="80%" width = "80%" /> 
+
+Our adapters are now renamed and can be differentiated. Next we will configure our internal adapter. By right clicking it and selecting properties. <br/>
+<br/>
+<img src = "https://imgur.com/HTB2nc4.png" height="80%" width = "80%" /> 
+
+Then selecting IPv4 and going into properties.<br/>
+<br/>
+<img src = "https://imgur.com/O9qnfAw.png" height="80%" width = "80%" /> 
+
+We will assign an IP address and subnet mask.The domain controller will function as its own DNS server, as we plan to install DNS server at a later stage, so we will use the loopback address here. <br/>
+<br/>
+<img src = "https://imgur.com/h2HfKSc.png" height="80%" width = "80%" /> 
 
