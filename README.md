@@ -143,7 +143,7 @@ Then selecting IPv4 and going into properties.<br/>
 <br/>
 <img src = "https://imgur.com/O9qnfAw.png" height="80%" width = "80%" /> 
 
-We will assign an IP address and subnet mask.The domain controller will function as its own DNS server, as we plan to install DNS server at a later stage, so we will use the loopback address here. <br/>
+We will assign an IP address and subnet mask.The domain controller will function as its own DNS server, as we plan to install DNS server at a later stage, so we will use the loopback address for the DNS server address. <br/>
 <br/>
 <img src = "https://imgur.com/h2HfKSc.png" height="80%" width = "80%" /> 
 
