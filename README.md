@@ -147,3 +147,75 @@ We will assign an IP address and subnet mask.The domain controller will function
 <br/>
 <img src = "https://imgur.com/h2HfKSc.png" height="80%" width = "80%" /> 
 
+
+### Installing Active Directory Domain Services: <br/>
+
+To install Active Directory we select the "Add roles and features" option on the server manager window. <br/>
+<br/>
+<img src = "https://imgur.com/Go4cbeW.png" height="80%" width = "80%" /> 
+
+A prompt will appear explaining that a few tasks need to have been completed. As we have done this we can continue by selecting "Next". <br/>
+<br/>
+<img src = "https://imgur.com/wTLz08g.png" height="80%" width = "80%" /> 
+
+We will not be using role services for Virtual Desktop Infrastructure so we will select the first option. <br/>
+<br/>
+<img src = "https://imgur.com/cSPdFxI.png" height="80%" width = "80%" /> 
+
+We will be asked to choose a destination for the installation. We only have 1 server so there is not much of a choice. We can continue. <br/>
+<br/>
+<img src = "https://imgur.com/R5VmML6.png" height="80%" width = "80%" /> 
+
+Here we are able to see all the roles we can potentially add to our server. For now we will only select Active Directory Domain Services. <br/>
+<br/>
+<img src = "https://imgur.com/5C6YegD.png" height="80%" width = "80%" /> 
+
+Here are all the features we can potentially add. The installer has automatically selected two options which we will install as they are required for Active Directory Domain Services. <br/>
+<br/>
+<img src = "https://imgur.com/nK9hqcY.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/MG0B8wv.png" height="80%" width = "80%" /> 
+
+Here we select "Install" to begin installing Active Directory Domain Services. <br/>
+<br/>
+
+<img src = "https://imgur.com/zzXL4LJ.png" height="80%" width = "80%" /> 
+
+When the installation is complete this will be displayed and we can close the installation wizard. <br/>
+<br/>
+
+<img src = "https://imgur.com/nTo5CiY.png" height="80%" width = "80%" /> 
+
+### Domain Configuration: <br/>
+
+We now must configure our server as a domain controller in order to use Active Directory Domain Services. <br/>
+<br/>
+<img src = "https://imgur.com/5bKETeP.png" height="80%" width = "80%" /> 
+
+We will select "Add a new forest" since we dont have an existing domain or forest to add to. I'll be naming my domain "Mango.com". <br/>
+<br/>
+<img src = "https://imgur.com/Y5w02xd.png" height="80%" width = "80%" /> 
+
+As I mentioned earlier here we are installing DNS server.<br/>
+<br/>
+<img src = "https://imgur.com/m35WSig.png" height="80%" width = "80%" /> 
+
+We dont have the option to add a DNS delegation so we can continue. <br/>
+<br/>
+<img src = "https://imgur.com/JdbQaxv.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/OWIOtLr.png" height="80%" width = "80%" /> 
+
+We will leave this as their default paths. <br/>
+<br/>
+<img src = "https://imgur.com/2On6Cwv.png" height="80%" width = "80%" /> 
+
+Final review before we complete the setup. <br/>
+<br/>
+<img src = "https://imgur.com/abvYd6V.png" height="80%" width = "80%" /> 
+
+We have met the prerequisite check and can install.
+After the installation is complete the server will automatically reboot. <br/>
+<br/>
+<img src = "https://imgur.com/4XDqH7l.png" height="80%" width = "80%" /> 
+
