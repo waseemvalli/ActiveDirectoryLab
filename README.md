@@ -10,7 +10,7 @@ This project involves setting up a small-scale network consisting of two virtual
 - <b>VirtualBox</b>
 - <b>Microsoft Server 2019<b/>
 - <b>Active Directory<b/>
-- <b>PowerShell</b> 
+
 
 
 ## Creating The Virtual Machines:
