@@ -1,4 +1,4 @@
-# Active Directory Lab
+![image](https://github.com/user-attachments/assets/40ae4edb-6015-4446-8883-397314dd30ef)# Active Directory Lab
 
 ## Description
 This project involves setting up a small-scale network consisting of two virtual machines. The first virtual machine will function as a domain controller with Active Directory Domain Services, while the second will serve as a client computer. Upon establishing the network, we will add users to the domain using PowerShell. Finally, we will implement group policies objects.
@@ -82,11 +82,11 @@ Then selecting "System". <br/>
 <br/>
 <img src = "https://imgur.com/GqHmjS1.png" height="80%" width="80%" /> 
 
-Scrolling to the bottom of the list and selecting the "About" setting. <br/>
+Scrolling to the bottom of the list and selecting "About". <br/>
 <br/>
 <img src = "https://imgur.com/SzVTKLz.png" height="80%" width="80%" />
 
-Scrolling down again and selecting the "Rename this PC" button. <br/>
+Scrolling down again and selecting "Rename this PC". <br/>
 <br/>
 <img src = "https://imgur.com/nAPpeUA.png" height = "80%" width = "80%" />
 
@@ -215,7 +215,45 @@ Final review before we complete the setup. <br/>
 <img src = "https://imgur.com/abvYd6V.png" height="80%" width = "80%" /> 
 
 We have met the prerequisite check and can install.
-After the installation is complete the server will automatically reboot. <br/>
+After the installation is complete, the server will automatically reboot. <br/>
 <br/>
 <img src = "https://imgur.com/4XDqH7l.png" height="80%" width = "80%" /> 
 
+### Creating an Admin account 
+
+While managing the domain controller from a local admin account is possible, most organisations require individual admin accounts for added security, permission control, and auditing. Therefore we will create an admin account.
+
+To do this first we must access Active Directory Users and Computers. <br/>
+<br/>
+
+<img src = "https://imgur.com/v1EfujV.png" height="80%" width = "80%" /> <br/>
+
+Next we will create an organisational unit (OU) for our admin accounts. <br/>
+<br/>
+
+<img src = "https://imgur.com/xiFba17.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/RV0kwNH.png" height="80%" width = "80%" /> <br/>
+
+Now we can create an admin account within this OU. <br/>
+<br/>
+
+<img src = "https://imgur.com/6QqwhzL.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/e18ubjB.png" height="80%" width = "80%" /> <br/>
+
+
+Since this is our own account in a lab environment, we won’t require the user to change the password at their next logon, and we will set the password to never expire. However, in an organisation, it is common practice to enable these options as they are usually part of password policy to enhance security. <br/>
+<br/>
+
+<img src = "https://imgur.com/wIOFQw9.png" height="80%" width = "80%" /> <br/>
+
+We have now created an account, but it is not yet recognized as an admin account and does not have administrative permissions. To grant the necessary permissions, we will proceed with the following steps: <br/>
+<br/>
+
+<img src = "https://imgur.com/FvyvxOu.png" height="80%" width = "80%" /> 
+
+
+<img src = "https://imgur.com/eimlgxH.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/UsCp9Db.png" height="80%" width = "80%" /> 
