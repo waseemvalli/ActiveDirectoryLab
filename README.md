@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/40ae4edb-6015-4446-8883-397314dd30ef)# Active Directory Lab
+# Active Directory Lab
 
 ## Description
 This project involves setting up a small-scale network consisting of two virtual machines. The first virtual machine will function as a domain controller with Active Directory Domain Services, while the second will serve as a client computer. Upon establishing the network, we will add users to the domain using PowerShell. Finally, we will implement group policies objects.
@@ -256,4 +256,39 @@ We have now created an account, but it is not yet recognized as an admin account
 
 <img src = "https://imgur.com/eimlgxH.png" height="80%" width = "80%" /> 
 
-<img src = "https://imgur.com/UsCp9Db.png" height="80%" width = "80%" /> 
+<img src = "https://imgur.com/UsCp9Db.png" height="80%" width = "80%" /> <br/>
+
+Our account now has admin permissions which we will sign into now and use moving forward. <br/>
+<br/>
+
+<img src = "https://imgur.com/v0ytjwM.png" height="80%" width = "80%" /> 
+
+### Installing RAS/NAT: <br/>
+
+To enable our domain controller to function as the gateway for the client virtual machine and provide internet access, we will install the Routing feature.
+
+<img src = "https://imgur.com/lus04jZ.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/8vjrnHN.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/YGENifY.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/IsU8oL3.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/X9q3Fqd.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/PYDbrcR.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/7O7mpMj.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/cRJANQs.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/8EsNjsV.png" height="80%" width = "80%" /> 
+
+### Installing and configuring DHCP: <br/>
+
+<img src = "https://imgur.com/4fBjTk4.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/7ITi5xT.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/BowqYbk.png" height="80%" width = "80%" /> 
