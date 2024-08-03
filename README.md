@@ -265,21 +265,36 @@ Our account now has admin permissions which we will sign into now and use moving
 
 ### Installing RAS/NAT: <br/>
 
-To enable our domain controller to function as the gateway for the client virtual machine and provide internet access, we will install the Routing feature.
+To enable our domain controller to function as the gateway for the client virtual machine and provide internet access, we will install the Routing feature.<br/>
+<br/>
+Routing is a service within the Remote Access role.
 
 <img src = "https://imgur.com/lus04jZ.png" height="80%" width = "80%" /> 
 
+Selecting Routing here will also automatically select RAS 
+
 <img src = "https://imgur.com/8vjrnHN.png" height="80%" width = "80%" /> 
+
+These are all the default selections. We will leave them as they are.
 
 <img src = "https://imgur.com/YGENifY.png" height="80%" width = "80%" /> 
 
+
 <img src = "https://imgur.com/IsU8oL3.png" height="80%" width = "80%" /> 
+
+
+After it has been installed we will go to configure it.
 
 <img src = "https://imgur.com/X9q3Fqd.png" height="80%" width = "80%" /> 
 
 <img src = "https://imgur.com/PYDbrcR.png" height="80%" width = "80%" /> 
 
+Here we will select NAT
+
 <img src = "https://imgur.com/7O7mpMj.png" height="80%" width = "80%" /> 
+
+Selecting our external adapter. 
+
 
 <img src = "https://imgur.com/cRJANQs.png" height="80%" width = "80%" /> 
 
