@@ -302,8 +302,73 @@ Selecting our external adapter.
 
 ### Installing and configuring DHCP: <br/>
 
+Next, we will install and configure DHCP. This will enable automatic IP addressing for the client computer, similar to how it would function in an organisation.
+
+
+First we navigate to the add role wizard and select DHCP.
+
 <img src = "https://imgur.com/4fBjTk4.png" height="80%" width = "80%" /> 
+
+The wizard has automatically selected this feature as a requirement we will not add any further features.
 
 <img src = "https://imgur.com/7ITi5xT.png" height="80%" width = "80%" /> 
 
+Here we are confirming the installation.
+
 <img src = "https://imgur.com/BowqYbk.png" height="80%" width = "80%" /> 
+
+Now that DHCP has been installed we can configure by selecting DHCP from the tools list.
+
+<img src = "https://imgur.com/eE5kYnt.png" height="80%" width = "80%" /> 
+
+First we will create an IP scope.
+
+<img src = "https://imgur.com/7cLRJqo.png" height="80%" width = "80%" /> 
+
+Here we are naming the scope. I have named the scope our range for simplicity.
+
+<img src = "https://imgur.com/yZ7b6Jl.png" height="80%" width = "80%" /> 
+
+We are defining the scope range. 
+
+<img src = "https://imgur.com/yQc4iYT.png" height="80%" width = "80%" /> 
+
+There arent any IP addresses we we to exclude from being given out in the range so we will not make any changes here.
+
+<img src = "https://imgur.com/FHVFW3y.png" height="80%" width = "80%" /> 
+
+Lease duration. This is how long an IP address is assigned to a client before it must be renewed.
+
+
+<img src = "https://imgur.com/mgHtrvP.png" height="80%" width = "80%" /> 
+
+We also want to Configure our default gateway so we will select configure now.
+
+<img src = "https://imgur.com/uKepfJv.png" height="80%" width = "80%" /> 
+
+
+Our domain controller will act as the default gateway so we will use it's IP address.
+
+<img src = "https://imgur.com/69FGFWd.png" height="80%" width = "80%" /> 
+
+Our domain controller will also resolve DNS requests so we will use it as our parent domain.
+
+
+<img src = "https://imgur.com/K2Wy3VS.png" height="80%" width = "80%" /> 
+
+We are not using WINS so we will not change anything here.
+
+
+<img src = "https://imgur.com/Ugka6ps.png" height="80%" width = "80%" /> 
+
+
+<img src = "https://imgur.com/TXzbwD6.png" height="80%" width = "80%" /> 
+
+<img src = "https://imgur.com/zVOArid.png" height="80%" width = "80%" /> 
+
+Our scope has been created but it is not activated. In order to do so we must authorise our DC.
+
+<img src = "https://imgur.com/iib0ywX.png" height="80%" width = "80%" /> 
+
+Now it has been activated and we have a working IP scope.
+<img src = "https://imgur.com/MSiDukp.png" height="80%" width = "80%" /> 
