@@ -333,7 +333,7 @@ We are defining the scope range.
 
 <img src = "https://imgur.com/yQc4iYT.png" height="80%" width = "80%" /> 
 
-There arent any IP addresses we we to exclude from being given out in the range so we will not make any changes here.
+There are not any IP addresses we want to exclude from being given out in the range so we will not make any changes here.
 
 <img src = "https://imgur.com/FHVFW3y.png" height="80%" width = "80%" /> 
 
