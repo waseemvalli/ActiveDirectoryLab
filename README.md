@@ -4,11 +4,11 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#description">About This Project</a></li>
+    <li><a href="#about-this-project">About This Project</a></li>
 </details>
 
 
-## Description
+## About This Project
 This self-study project involves setting up a small-scale network consisting of two virtual machines. The first virtual machine will function as a domain controller with Active Directory Domain Services, while the second will serve as a client computer. Upon establishing the network,I will carry out standard administrative tasks in Active Directory, including password resets, applying Group Policies, and deploying applications.
 <br />
 
