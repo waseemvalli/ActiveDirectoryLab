@@ -60,7 +60,7 @@ Our domain controller will serve as the gateway for the client virtual machine, 
 <img src = "https://imgur.com/Te8mRGo.png" height="80%" width="80%" />
 
 
-### Windows Server Installation <br/>
+### Windows Server Installation
 Our virtual machine is now ready to boot and we can begin installing Windows Server.
 
 <img src = "https://imgur.com/Xp16mbX.png" height="80%" width="80%" />
