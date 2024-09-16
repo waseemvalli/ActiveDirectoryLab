@@ -1,7 +1,12 @@
 # Active Directory Lab
 
-## Table of Contents
-[Description of the Project](#description)
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#description">About This Project</a></li>
+</details>
+
 
 ## Description
 This self-study project involves setting up a small-scale network consisting of two virtual machines. The first virtual machine will function as a domain controller with Active Directory Domain Services, while the second will serve as a client computer. Upon establishing the network,I will carry out standard administrative tasks in Active Directory, including password resets, applying Group Policies, and deploying applications.
