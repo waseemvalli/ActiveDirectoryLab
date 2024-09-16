@@ -25,7 +25,7 @@ This self-study project involves setting up a small-scale network consisting of 
 - <b>Active Directory<b/>
 
 
-## Creating the Domain Controller <br/> 
+## Creating the Domain Controller 
 
 
 
