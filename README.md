@@ -9,6 +9,9 @@
       <li><a href="#languages-and-utilities"> Languages and Utilities</a></li>
     </ul>
     <li><a href="#creating-the-domain-controller">Creating the Domain Controller</a>
+        <ul>
+      <li><a href="#creating-the-dc-virtual-machine"> Creating the DC Virtual Machine</a></li>
+    </ul>
     
 </details>
 
@@ -27,7 +30,9 @@ This self-study project involves setting up a small-scale network consisting of 
 
 ## Creating the Domain Controller 
 
+This section covers the initial setup of the DC virtual machine, including the allocation of resources, configuration of network adapters, and installation of Windows Server 2019.
 
+### Creating the DC Virtual Machine
 
 Here we use the Windows Server 2019 ISO which can be installed [here](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019). <br/>
 <br/>
