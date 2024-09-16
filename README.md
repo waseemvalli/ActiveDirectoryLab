@@ -1,7 +1,7 @@
 # Active Directory Lab
 
 ## Description
-This project involves setting up a small-scale network consisting of two virtual machines. The first virtual machine will function as a domain controller with Active Directory Domain Services, while the second will serve as a client computer. Upon establishing the network, we will add users to the domain. Finally, we will implement group policies objects.
+This project involves setting up a small-scale network consisting of two virtual machines. The first virtual machine will function as a domain controller with Active Directory Domain Services, while the second will serve as a client computer. Upon establishing the network, we will add users to the domain. Finally, we will implement group policy objects.
 <br />
 
 
