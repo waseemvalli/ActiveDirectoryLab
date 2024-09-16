@@ -8,7 +8,7 @@
     <ul>
       <li><a href="#languages-and-utilities"> Languages and Utilities</a></li>
     </ul>
-    <li><a href="#creating-the-domain-controller">Creating the Domain Controller</a></li>
+    <li><a href="#creating-the-domain-controller">Creating the Domain Controller</a>
     
 </details>
 
