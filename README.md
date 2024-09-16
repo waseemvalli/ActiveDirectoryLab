@@ -372,3 +372,90 @@ Our scope has been created but it is not activated. In order to do so we must au
 
 Now it has been activated and we have a working IP scope.
 <img src = "https://imgur.com/MSiDukp.png" height="80%" width = "80%" /> 
+
+The Domain Controller is now completely configured and has all the requirements it needs to function. We can now create our first regular user in Active Directory.
+
+
+Creating a few new organisational units to store the new users.
+
+https://i.imgur.com/XS68x8W.png
+https://i.imgur.com/MsBpFXR.png
+
+Creating two new OUs called domain users and domain computers within the Mango OU.
+
+https://i.imgur.com/K8SdEur.png
+https://i.imgur.com/VeVSmOR.png
+
+Creating the first user within the domain users OU.
+https://i.imgur.com/tej3tpL.png
+https://i.imgur.com/zAOjhgV.png
+
+
+Setting the password. In an actual professional environment would check change password at next logon.
+
+https://i.imgur.com/xJh46iK.png
+https://i.imgur.com/svkXMnG.png
+
+Our user account is now created. We can create our second virtual machine that will act as the client computer.
+
+Creating the 2nd VM using the .ISO file using the windows media creation tool which can be installed [here](https://www.microsoft.com/en-gb/software-download/windows10)
+
+https://i.imgur.com/bTVlAy8.png
+
+Allocating resources
+https://i.imgur.com/8CqbwkG.png
+https://i.imgur.com/q0h4oCm.png
+https://i.imgur.com/7RPdjHQ.png
+
+Setting the network adapter to the internal one.
+https://i.imgur.com/g7xnICN.png
+
+Windows 10 Setup
+https://i.imgur.com/QVd43SV.png
+https://i.imgur.com/lWqGyHu.png
+
+No product key
+https://i.imgur.com/7FrBFql.png
+
+Pro version so we can join the domain
+https://i.imgur.com/Oz9Qd5Q.png
+
+Custom Install since its a fresh install
+https://i.imgur.com/qxtaFvB.png
+
+Selecting drive
+https://i.imgur.com/PcbdCq1.png
+
+After a few restarts
+https://i.imgur.com/Vjd2Exz.png
+https://i.imgur.com/ZFs429E.png
+
+For now we will select personal use to avoid all of the windows account sign in stuff
+https://i.imgur.com/jkHzV7a.png
+
+Selecting offline account
+https://i.imgur.com/KiQ6Qjm.png
+
+Limited experience
+https://i.imgur.com/fJybgQy.png
+
+Creating default local account
+https://i.imgur.com/MyVXx1Z.png
+
+Joining the domain
+https://imgur.com/MNyOMXM
+https://imgur.com/rl45KP5
+https://imgur.com/wWRUdRR
+https://imgur.com/gwBlhEt
+
+Logging into the domain with the account created earlier
+
+https://imgur.com/CIgJAZT
+https://imgur.com/dNpG8xq
+
+Client1 is now apart of the domain. We will now add it to the domain computers ou since this current folder is only a container and we cannot link gpos to them.
+
+https://imgur.com/VkBotBd
+https://imgur.com/9Ff0Ser
+https://imgur.com/iHgmpvP
+https://imgur.com/xQa1v1H
