@@ -38,17 +38,17 @@ Here we use the Windows Server 2019 ISO which can be installed [here](https://ww
 <br/>
 <img src="https://i.imgur.com/7xzAg4J.png" height="80%" width="80%" />
 
-### Allocating resources:
+#### Allocating resources:
 As we will not be performing demanding tasks with our virtual machine, we will dedicate minimal resources. <br/>
 <br/>
 <img src="https://imgur.com/WLfn0fo.png" height="80%" width="80%" />
 
-### Allocating disk space: <br/>
+#### Allocating disk space: <br/>
 A 50 GB virtual disk will be more than enough space. <br/>
 <br/>
 <img src="https://imgur.com/lsclwXz.png" height="80%" width="80%" />
 
-### Adding network adapters: <br/>
+#### Adding network adapters: <br/>
 Our domain controller will serve as the gateway for the client virtual machine, allowing it to access the internet. Therefore we will need to add another internal network adapter.  <br/>
 <br/>
 <img src = "https://imgur.com/NUCwGYp.png" height="80%" width="80%" />
