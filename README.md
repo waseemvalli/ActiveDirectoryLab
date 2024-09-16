@@ -8,6 +8,7 @@
     <ul>
       <li><a href="#languages-and-utilities"> Languages and Utilities</a></li>
     </ul>
+    <li><a href="#creating-the-domain-controller">Creating the Domain Controller</a></li>
     
 </details>
 
@@ -24,10 +25,10 @@ This self-study project involves setting up a small-scale network consisting of 
 - <b>Active Directory<b/>
 
 
+## Creating the Domain Controller <br/> 
 
-## Creating the Virtual Machines:
 
-### Creating the domain controller: <br/> 
+
 Here we use the Windows Server 2019 ISO which can be installed [here](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019). <br/>
 <br/>
 <img src="https://i.imgur.com/7xzAg4J.png" height="80%" width="80%" />
