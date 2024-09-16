@@ -10,7 +10,10 @@
     </ul>
     <li><a href="#creating-the-domain-controller">Creating the Domain Controller</a>
         <ul>
-      <li><a href="#creating-the-dc-virtual-machine"> Creating the DC Virtual Machine</a></li>
+         <li><a href="#creating-the-dc-virtual-machine"> Creating the DC Virtual Machine</a></li>
+         <li><a href="#windows-server-installation"> Windows Server Installation</a></li>
+         
+          
     </ul>
     
 </details>
@@ -56,8 +59,8 @@ Our domain controller will serve as the gateway for the client virtual machine, 
 <img src = "https://imgur.com/Te8mRGo.png" height="80%" width="80%" />
 
 
-### Windows Server Setup <br/>
-Our virtual machine is now ready to boot and we can begin setting up Windows Server.
+### Windows Server Installation <br/>
+Our virtual machine is now ready to boot and we can begin installing Windows Server.
 
 <img src = "https://imgur.com/Xp16mbX.png" height="80%" width="80%" />
 <img src = "https://imgur.com/qH3PLDG.png" height="80%" width="80%" />
