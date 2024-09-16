@@ -4,16 +4,20 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-this-project">About This Project</a></li>
+    <li><a href="#about-this-project">About this project</a>
+    <ul>
+      <li><a href="#languages-and-utilities"> Languages and Utilities</a></li>
+    </ul>
+    
 </details>
 
 
-## About This Project
-This self-study project involves setting up a small-scale network consisting of two virtual machines. The first virtual machine will function as a domain controller with Active Directory Domain Services, while the second will serve as a client computer. Upon establishing the network,I will carry out standard administrative tasks in Active Directory, including password resets, applying Group Policies, and deploying applications.
+## About this project
+This self-study project involves setting up a small-scale network consisting of two virtual machines. The first virtual machine will function as a domain controller with Active Directory Domain Services, while the second will serve as a client computer. After establishing the network, I will carry out standard administrative tasks in Active Directory, including password resets, applying Group Policies, and deploying applications.
 <br />
 
 
-## Languages and Utilities Used
+## Languages and Utilities 
 
 - <b>VirtualBox</b>
 - <b>Microsoft Server 2019<b/>
@@ -21,7 +25,7 @@ This self-study project involves setting up a small-scale network consisting of 
 
 
 
-## Creating The Virtual Machines:
+## Creating the Virtual Machines:
 
 ### Creating the domain controller: <br/> 
 Here we use the Windows Server 2019 ISO which can be installed [here](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019). <br/>
