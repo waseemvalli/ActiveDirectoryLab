@@ -12,9 +12,10 @@
         <ul>
          <li><a href="#creating-the-dc-virtual-machine"> Creating the DC Virtual Machine</a></li>
          <li><a href="#windows-server-installation"> Windows Server Installation</a></li>
+        </ul>
          
           
-    </ul>
+   
     
 </details>
 
