@@ -24,6 +24,7 @@
          <li><a href="#installing-active-directory-domain-services"> Installing Active Directory Domain Services</a></li>
           <li><a href="#domain-creation"> Domain Creation</a></li>
             </ul>
+    <li><a href="#creating-an-admin-account">Creating an Admin account</a>
   
           
    
@@ -297,6 +298,8 @@ Our account now has admin permissions which we will sign into now and use moving
 <br/>
 
 <img src = "https://imgur.com/v0ytjwM.png" height="80%" width = "80%" /> 
+
+## Adding Networking Roles and Features
 
 ### Installing RAS/NAT: <br/>
 
