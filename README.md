@@ -471,11 +471,13 @@ Allocating resources
 <img src = "https://i.imgur.com/q0h4oCm.png" height="80%" width = "80%" /> 
 <img src = "https://i.imgur.com/7RPdjHQ.png" height="80%" width = "80%" /> 
 
-Setting the network adapter to the internal one.
+Configuring the network adapter to use the internal network.
 
 <img src = "https://i.imgur.com/g7xnICN.png" height="80%" width = "80%" /> 
 
 ### Windows 10 Installation
+
+After creating the virtual machine we can being the Windows 10 installation process.
 
 <img src = "https://i.imgur.com/QVd43SV.png" height="80%" width = "80%" /> 
 <img src = "https://i.imgur.com/lWqGyHu.png" height="80%" width = "80%" /> 
@@ -484,11 +486,11 @@ Selecting "I don't have a Product Key".
 
 <img src = "https://i.imgur.com/7FrBFql.png" height="80%" width = "80%" /> 
 
-I have chosen to use the Pro version of Windows 10 because it offers significantly more features compared to the Home edition. The primary reason is that the Home edition is limited to joining only Workgroups, while the Pro version allows the system to join a domain.
+We will use the 'Pro' edition of Windows 10 because the Home edition is limited to joining only Workgroups, whereas the Pro version allows the system to join a domain.
 
 <img src = "https://i.imgur.com/Oz9Qd5Q.png" height="80%" width = "80%" /> 
 
-Since this is a fresh installation and not an upgrade, I will select the custom installation option.
+Since this is a fresh installation and not an upgrade, we will select the custom installation option.
 
 <img src = "https://i.imgur.com/qxtaFvB.png" height="80%" width = "80%" /> 
 
