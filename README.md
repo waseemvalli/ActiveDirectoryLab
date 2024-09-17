@@ -28,7 +28,6 @@
     <li><a href="#adding-networking-roles-and-features">Adding Networking Roles and Features</a>
     <ul>
          <li><a href="#installing-rasnat"> Installing RAS/NAT</a></li>
-          <li><a href="#adding-network-adapters"> Adding Network Adapters</a></li>
          <li><a href="#installing-and-configuring-dhcp"> Installing and configuring DHCP</a></li>
         </ul>
   
