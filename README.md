@@ -36,7 +36,7 @@
          <li><a href="#creating-the-client-virtual-machine"> Creating the Client Virtual Machine</a></li>
          <li><a href="#windows-10-installation"> Windows 10 Installation</a></li>
        </ul>
-         <li><a href="#windows-10-installation"> Connecting to the Domain</a></li>
+         <li><a href="#hostname-change-domain-integration-and-network-verification"> Hostname Change, Domain Integration, and Network Verification</a></li>
     <ul>
          <li><a href="#windows-10-installation"> Signing into the Domain Using a User Account</a></li>
         <li><a href="#windows-10-installation"> Verifying Network Connectivity and Functionality</a></li>
@@ -48,7 +48,7 @@
 
 
 ## About this project
-This self-study project involves setting up a small-scale network consisting of two virtual machines. The first virtual machine will function as a domain controller with Active Directory Domain Services, while the second will serve as a client computer. After establishing the network, I will carry out standard administrative tasks in Active Directory, including password resets, applying Group Policies, and deploying applications.
+This self-study project involves setting up a small-scale network consisting of two virtual machines. The first virtual machine will function as a domain controller with Active Directory Domain Services, while the second will serve as a client computer. After establishing the network, I will carry out standard administrative tasks in Active Directory, including password resets, applying Group Policies, and deploying applications, while also experimenting as a learning tool for myself.
 <br />
 
 
@@ -480,44 +480,47 @@ Setting the network adapter to the internal one.
 <img src = "https://i.imgur.com/QVd43SV.png" height="80%" width = "80%" /> 
 <img src = "https://i.imgur.com/lWqGyHu.png" height="80%" width = "80%" /> 
 
-No product key
+Selecting "I don't have a Product Key".
 
 <img src = "https://i.imgur.com/7FrBFql.png" height="80%" width = "80%" /> 
 
-Pro version so we can join the domain
+I have chosen to use the Pro version of Windows 10 because it offers significantly more features compared to the Home edition. The primary reason is that the Home edition is limited to joining only Workgroups, while the Pro version allows the system to join a domain.
 
 <img src = "https://i.imgur.com/Oz9Qd5Q.png" height="80%" width = "80%" /> 
 
-Custom Install since its a fresh install
+Since this is a fresh installation and not an upgrade, I will select the custom installation option.
 
 <img src = "https://i.imgur.com/qxtaFvB.png" height="80%" width = "80%" /> 
 
-Selecting drive
-
 <img src = "https://i.imgur.com/PcbdCq1.png" height="80%" width = "80%" /> 
 
-After a few restarts
+After a few restarts, Windows presents us with a few preference-based options.
+
 
 <img src = "https://i.imgur.com/Vjd2Exz.png" height="80%" width = "80%" /> 
 <img src = "https://i.imgur.com/ZFs429E.png" height="80%" width = "80%" /> 
 
-For now we will select personal use to avoid all of the windows account sign in stuff
+To avoid signing in with an online Microsoft account, we will select the 'Set up for personal use' option.
 
 <img src = "https://i.imgur.com/jkHzV7a.png" height="80%" width = "80%" /> 
 
-Selecting offline account
+Here, we are selecting the offline account option to avoid using an online Microsoft account.
 
 <img src = "https://i.imgur.com/KiQ6Qjm.png" height="80%" width = "80%" /> 
 
-Limited experience 
+Selecting 'Limited experience' to again avoid using an online Microsoft account.
 
 <img src = "https://i.imgur.com/fJybgQy.png" height="80%" width = "80%" /> 
 
-Creating default local account
+Here we are creating the default local account.
 
 <img src = "https://i.imgur.com/MyVXx1Z.png" height="80%" width = "80%" /> 
 
-### Connecting to the Domain
+## Hostname Change, Domain Integration, and Network Verification
+
+Windows has been installed on the client virtual machine. This section will cover the process of changing the hostname, joining the domain and verifying the functionality of the network.
+
+### Changing the hostname and connecting to the domain
 
 <img src = "https://imgur.com/MNyOMXM.png" height="80%" width = "80%" /> 
 <img src = "https://imgur.com/rl45KP5.png" height="80%" width = "80%" /> 
@@ -544,4 +547,4 @@ Using the ipconfig command, we can verify that the machine has been assigned a v
 
 ## Conclusion of setup 
 
-The network has been successfully established, with the domain controller managing key networking services, including DHCP, DNS, and routing for the client machine to access the Internet. The remainder of this document will focus on exploring and experimenting with Active Directory, using it as a learning tool to further my understanding of its features and functionality.
+The network has been successfully established, with the domain controller managing key networking services such as DHCP, DNS, and routing to enable the client machine's Internet access. The remainder of this repository will focus on standard administrative tasks in Active Directory, while also exploring and experimenting with it as a learning tool to further my understanding of its features and functionality.
