@@ -30,7 +30,16 @@
          <li><a href="#installing-rasnat"> Installing RAS/NAT</a></li>
          <li><a href="#installing-and-configuring-dhcp"> Installing and configuring DHCP</a></li>
         </ul>
-  
+   <li><a href="#creating-ous-and-users">Creating OUs and Users </a>
+   <li><a href="#creating-ous-and-users">Creating the Client System </a>
+     <ul>
+         <li><a href="#creating-the-client-virtual-machine"> Creating the Client Virtual Machine</a></li>
+         <li><a href="#windows-10-installation"> Windows 10 Installation</a></li>
+       </ul>
+         <li><a href="#windows-10-installation"> Connecting to the Domain</a></li>
+    <ul>
+         <li><a href="#windows-10-installation"> Signing into the Domain Using a User Account</a></li>
+        
           
    
     
@@ -420,7 +429,7 @@ Now it has been activated and we have a working IP scope.
 
 The Domain Controller is now completely configured and has all the requirements it needs to function. We can now create our first regular user in Active Directory.
 
-## Creating Users 
+## Creating OUs and Users 
 
 
 Creating a few new organisational units to store the new users.
@@ -447,6 +456,7 @@ Our user account is now created. We can create our second virtual machine that w
 
 ## Creating the Client System
 
+### Creating the Client Virtual Machine
 
 Creating the 2nd VM using the .ISO file using the windows media creation tool which can be installed [here](https://www.microsoft.com/en-gb/software-download/windows10)
 
@@ -460,7 +470,8 @@ https://i.imgur.com/7RPdjHQ.png
 Setting the network adapter to the internal one.
 https://i.imgur.com/g7xnICN.png
 
-Windows 10 Setup
+### Windows 10 Installation
+
 https://i.imgur.com/QVd43SV.png
 https://i.imgur.com/lWqGyHu.png
 
@@ -492,13 +503,13 @@ https://i.imgur.com/fJybgQy.png
 Creating default local account
 https://i.imgur.com/MyVXx1Z.png
 
-Joining the domain
+### Connecting to the Domain
 https://imgur.com/MNyOMXM
 https://imgur.com/rl45KP5
 https://imgur.com/wWRUdRR
 https://imgur.com/gwBlhEt
 
-Logging into the domain with the account created earlier
+Logging into the domain with the user account 
 
 https://imgur.com/CIgJAZT
 https://imgur.com/dNpG8xq
