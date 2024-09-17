@@ -301,6 +301,8 @@ Our account now has admin permissions which we will sign into now and use moving
 
 ## Adding Networking Roles and Features
 
+In this section, I will how add key networking roles and features to the Windows Server. This includes installing and configuring Routing and Remote Access Service (RRAS) with Network Address Translation (NAT) as well as setting up DHCP scopes and leases to automatically manage IP address assignment within the network.
+
 ### Installing RAS/NAT: <br/>
 
 To enable our domain controller to function as the gateway for the client virtual machine and provide internet access, we will install the Routing feature.<br/>
