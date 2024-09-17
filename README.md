@@ -8,12 +8,23 @@
     <ul>
       <li><a href="#languages-and-utilities"> Languages and Utilities</a></li>
     </ul>
-    <li><a href="#creating-the-domain-controller">Creating the Domain Controller</a>
+    <li><a href="#creating-the-domain-controller-system">Creating the Domain Controller System</a>
         <ul>
-         <li><a href="#creating-the-dc-virtual-machine"> Creating the DC Virtual Machine</a></li>
+         <li><a href="#creating-the-dc-virtual-machine"> Creating the Virtual Machine</a></li>
+          <li><a href="#adding-network-adapters"> Adding Network Adapters</a></li>
          <li><a href="#windows-server-installation"> Windows Server Installation</a></li>
         </ul>
-         
+    <li><a href="#configuring-the-domain-controller-system">Configuring the Domain Controller System</a>
+        <ul>
+         <li><a href="#changing-the-hostname">Changing the Hostname</a></li>
+         <li><a href="#configuring-network-adapters"> Configuring Network Adapters</a></li>
+        </ul>
+         <li><a href="#active-directory-installation-and-domain-creation">Active Directory Installation and Domain Creation</a>
+        <ul>
+         <li><a href="#installing-active-directory-domain-services"> Installing Active Directory Domain Services</a></li>
+          <li><a href="#domain-creation"> Domain Creation</a></li>
+            </ul>
+  
           
    
     
@@ -32,7 +43,7 @@ This self-study project involves setting up a small-scale network consisting of 
 - <b>Active Directory<b/>
 
 
-## Creating the Domain Controller 
+## Creating the Domain Controller System
 
 This section covers the initial setup of the DC virtual machine, including the allocation of resources, configuration of network adapters, and installation of Windows Server 2019.
 
@@ -52,7 +63,7 @@ A 50 GB virtual disk will be more than enough space. <br/>
 <br/>
 <img src="https://imgur.com/lsclwXz.png" height="80%" width="80%" />
 
-### Adding network adapters <br/>
+### Adding network adapters 
 Our domain controller will serve as the gateway for the client virtual machine, allowing it to access the internet. Therefore we will need to add another internal network adapter.  <br/>
 <br/>
 <img src = "https://imgur.com/NUCwGYp.png" height="80%" width="80%" />
@@ -88,12 +99,12 @@ After a restart Windows Server has been installed and we can create our default 
 <br/>
 <img src = "https://imgur.com/ghxkfVH.png" height="80%" width="80%" />
 
-### Windows Server is Installed: <br/>
+## Configuring the Domain Controller System
 Our domain controller virtual machine now has the correct operating system installed, next steps involve renaming the system, configuring the network adapters and installing Active Directory. <br/>
 <br/>
 <img src = "https://imgur.com/yJ1FYTh.png" height="80%" width="80%" />
 
-### Renaming this system: <br/>
+### Changing the Hostname 
 This is done by the following steps. <br/>
 <br/>
 Navigating to the start menu and selecting the settings option. <br/>
@@ -120,7 +131,7 @@ After selecting "Next" this page will be displayed. We will choose to restart la
 <br/>
 <img src = "https://imgur.com/gbk6R8u.png" height = "80%" width = "80%" />
 
-### Configuring Network Adapters: <br/>
+### Configuring Network Adapters
 Here we're going to be renaming our network adapters and configuring the internal adapter. <br/>
 <br/>
 First we will head to the settings page and select the "Network & Internet" option. <br/>
@@ -169,8 +180,10 @@ We will assign an IP address and subnet mask.The domain controller will function
 <br/>
 <img src = "https://imgur.com/h2HfKSc.png" height="80%" width = "80%" /> 
 
+## Active Directory Installation and Domain Creation
+In this section, we will cover the process of installing Active Directory Domain Services on the Windows Server and creating a new domain. This includes adding the Active Directory Domain Services role to the server, promoting the server to a domain controller, and configuring the necessary settings for domain creation. By the end of this section, we will have a fully functional domain environment.
 
-### Installing Active Directory Domain Services: <br/>
+### Installing Active Directory Domain Services
 
 To install Active Directory we select the "Add roles and features" option on the server manager window. <br/>
 <br/>
@@ -208,7 +221,7 @@ When the installation is complete this will be displayed and we can close the in
 
 <img src = "https://imgur.com/nTo5CiY.png" height="80%" width = "80%" /> 
 
-### Domain Configuration: <br/>
+### Domain Creation
 
 We now must configure our server as a domain controller in order to use Active Directory Domain Services. <br/>
 <br/>
