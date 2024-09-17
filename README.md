@@ -25,6 +25,12 @@
           <li><a href="#domain-creation"> Domain Creation</a></li>
             </ul>
     <li><a href="#creating-an-admin-account">Creating an Admin account</a>
+    <li><a href="#adding-networking-roles-and-features">Adding Networking Roles and Features</a>
+    <ul>
+         <li><a href="#installing-rasnat"> Installing RAS/NAT</a></li>
+          <li><a href="#adding-network-adapters"> Adding Network Adapters</a></li>
+         <li><a href="#installing-and-configuring-dhcp"> Installing and configuring DHCP</a></li>
+        </ul>
   
           
    
@@ -284,7 +290,7 @@ Since this is our own account in a lab environment, we won’t require the user 
 
 <img src = "https://imgur.com/wIOFQw9.png" height="80%" width = "80%" /> <br/>
 
-We have now created an account, but it is not yet recognized as an admin account and does not have administrative permissions. To grant the necessary permissions, we will proceed with the following steps: <br/>
+We have now created an account, but it is not yet recognised as an admin account and does not have administrative permissions. To grant the necessary permissions, we will proceed with the following steps: <br/>
 <br/>
 
 <img src = "https://imgur.com/FvyvxOu.png" height="80%" width = "80%" /> 
@@ -294,16 +300,16 @@ We have now created an account, but it is not yet recognized as an admin account
 
 <img src = "https://imgur.com/UsCp9Db.png" height="80%" width = "80%" /> <br/>
 
-Our account now has admin permissions which we will sign into now and use moving forward. <br/>
+Our account now has admin permissions which we will sign into and use moving forward. <br/>
 <br/>
 
 <img src = "https://imgur.com/v0ytjwM.png" height="80%" width = "80%" /> 
 
 ## Adding Networking Roles and Features
 
-In this section, I will how add key networking roles and features to the Windows Server. This includes installing and configuring Routing and Remote Access Service (RRAS) with Network Address Translation (NAT) as well as setting up DHCP scopes and leases to automatically manage IP address assignment within the network.
+In this section, I will add key networking roles and features to the Windows Server. This includes installing and configuring Routing and Remote Access Service (RRAS) with Network Address Translation (NAT) as well as setting up DHCP scopes and leases to automatically manage IP address assignment within the network.
 
-### Installing RAS/NAT: <br/>
+### Installing RAS/NAT
 
 To enable our domain controller to function as the gateway for the client virtual machine and provide internet access, we will install the Routing feature.<br/>
 <br/>
@@ -340,7 +346,7 @@ Selecting our external adapter.
 
 <img src = "https://imgur.com/8EsNjsV.png" height="80%" width = "80%" /> 
 
-### Installing and configuring DHCP: <br/>
+### Installing and configuring DHCP
 
 Next, we will install and configure DHCP. This will enable automatic IP addressing for the client computer, similar to how it would function in an organisation.
 
@@ -365,7 +371,7 @@ First we will create an IP scope.
 
 <img src = "https://imgur.com/7cLRJqo.png" height="80%" width = "80%" /> 
 
-Here we are naming the scope. I have named the scope our range for simplicity.
+Here we are naming the scope. I have used our DHCP range as the scope's name for simplicity.
 
 <img src = "https://imgur.com/yZ7b6Jl.png" height="80%" width = "80%" /> 
 
@@ -415,6 +421,8 @@ Now it has been activated and we have a working IP scope.
 
 The Domain Controller is now completely configured and has all the requirements it needs to function. We can now create our first regular user in Active Directory.
 
+## Creating Users 
+
 
 Creating a few new organisational units to store the new users.
 
@@ -437,6 +445,9 @@ https://i.imgur.com/xJh46iK.png
 https://i.imgur.com/svkXMnG.png
 
 Our user account is now created. We can create our second virtual machine that will act as the client computer.
+
+## Creating the Client System
+
 
 Creating the 2nd VM using the .ISO file using the windows media creation tool which can be installed [here](https://www.microsoft.com/en-gb/software-download/windows10)
 
@@ -493,7 +504,7 @@ Logging into the domain with the account created earlier
 https://imgur.com/CIgJAZT
 https://imgur.com/dNpG8xq
 
-Client1 is now apart of the domain. We will now add it to the domain computers ou since this current folder is only a container and we cannot link gpos to them.
+Client1 is now apart of the domain. We will now add it to the domain computers OU since this current folder is only a container and we cannot link GPOs to them.
 
 https://imgur.com/VkBotBd
 https://imgur.com/9Ff0Ser
