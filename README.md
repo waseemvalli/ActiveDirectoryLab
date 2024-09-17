@@ -39,6 +39,7 @@
          <li><a href="#windows-10-installation"> Connecting to the Domain</a></li>
     <ul>
          <li><a href="#windows-10-installation"> Signing into the Domain Using a User Account</a></li>
+        <li><a href="#windows-10-installation"> Verifying Network Connectivity and Functionality</a></li>
         
           
    
@@ -425,6 +426,7 @@ Our scope has been created but it is not activated. In order to do so we must au
 <img src = "https://imgur.com/iib0ywX.png" height="80%" width = "80%" /> 
 
 Now it has been activated and we have a working IP scope.
+
 <img src = "https://imgur.com/MSiDukp.png" height="80%" width = "80%" /> 
 
 The Domain Controller is now completely configured and has all the requirements it needs to function. We can now create our first regular user in Active Directory.
@@ -434,23 +436,24 @@ The Domain Controller is now completely configured and has all the requirements 
 
 Creating a few new organisational units to store the new users.
 
-https://i.imgur.com/XS68x8W.png
-https://i.imgur.com/MsBpFXR.png
+<img src = "https://i.imgur.com/XS68x8W.png" height="80%" width = "80%" /> 
+<img src = "https://i.imgur.com/MsBpFXR.png" height="80%" width = "80%" /> 
 
 Creating two new OUs called domain users and domain computers within the Mango OU.
 
-https://i.imgur.com/K8SdEur.png
-https://i.imgur.com/VeVSmOR.png
+<img src = "https://i.imgur.com/K8SdEur.png" height="80%" width = "80%" /> 
+<img src = "https://i.imgur.com/VeVSmOR.png" height="80%" width = "80%" /> 
 
 Creating the first user within the domain users OU.
-https://i.imgur.com/tej3tpL.png
-https://i.imgur.com/zAOjhgV.png
+
+<img src = "https://i.imgur.com/tej3tpL.png" height="80%" width = "80%" /> 
+<img src = "https://i.imgur.com/zAOjhgV.png" height="80%" width = "80%" /> 
 
 
 Setting the password. In an actual professional environment would check change password at next logon.
 
-https://i.imgur.com/xJh46iK.png
-https://i.imgur.com/svkXMnG.png
+<img src = "https://i.imgur.com/xJh46iK.png" height="80%" width = "80%" /> 
+<img src = "https://i.imgur.com/svkXMnG.png" height="80%" width = "80%" /> 
 
 Our user account is now created. We can create our second virtual machine that will act as the client computer.
 
@@ -460,63 +463,82 @@ Our user account is now created. We can create our second virtual machine that w
 
 Creating the 2nd VM using the .ISO file using the windows media creation tool which can be installed [here](https://www.microsoft.com/en-gb/software-download/windows10)
 
-https://i.imgur.com/bTVlAy8.png
+<img src = "https://i.imgur.com/bTVlAy8.png" height="80%" width = "80%" /> 
 
 Allocating resources
-https://i.imgur.com/8CqbwkG.png
-https://i.imgur.com/q0h4oCm.png
-https://i.imgur.com/7RPdjHQ.png
+
+<img src = "https://i.imgur.com/8CqbwkG.png" height="80%" width = "80%" /> 
+<img src = "https://i.imgur.com/q0h4oCm.png" height="80%" width = "80%" /> 
+<img src = "https://i.imgur.com/7RPdjHQ.png" height="80%" width = "80%" /> 
 
 Setting the network adapter to the internal one.
-https://i.imgur.com/g7xnICN.png
+
+<img src = "https://i.imgur.com/g7xnICN.png" height="80%" width = "80%" /> 
 
 ### Windows 10 Installation
 
-https://i.imgur.com/QVd43SV.png
-https://i.imgur.com/lWqGyHu.png
+<img src = "https://i.imgur.com/QVd43SV.png" height="80%" width = "80%" /> 
+<img src = "https://i.imgur.com/lWqGyHu.png" height="80%" width = "80%" /> 
 
 No product key
-https://i.imgur.com/7FrBFql.png
+
+<img src = "https://i.imgur.com/7FrBFql.png" height="80%" width = "80%" /> 
 
 Pro version so we can join the domain
-https://i.imgur.com/Oz9Qd5Q.png
+
+<img src = "https://i.imgur.com/Oz9Qd5Q.png" height="80%" width = "80%" /> 
 
 Custom Install since its a fresh install
-https://i.imgur.com/qxtaFvB.png
+
+<img src = "https://i.imgur.com/qxtaFvB.png" height="80%" width = "80%" /> 
 
 Selecting drive
-https://i.imgur.com/PcbdCq1.png
+
+<img src = "https://i.imgur.com/PcbdCq1.png" height="80%" width = "80%" /> 
 
 After a few restarts
-https://i.imgur.com/Vjd2Exz.png
-https://i.imgur.com/ZFs429E.png
+
+<img src = "https://i.imgur.com/Vjd2Exz.png" height="80%" width = "80%" /> 
+<img src = "https://i.imgur.com/ZFs429E.png" height="80%" width = "80%" /> 
 
 For now we will select personal use to avoid all of the windows account sign in stuff
-https://i.imgur.com/jkHzV7a.png
+
+<img src = "https://i.imgur.com/jkHzV7a.png" height="80%" width = "80%" /> 
 
 Selecting offline account
-https://i.imgur.com/KiQ6Qjm.png
 
-Limited experience
-https://i.imgur.com/fJybgQy.png
+<img src = "https://i.imgur.com/KiQ6Qjm.png" height="80%" width = "80%" /> 
+
+Limited experience 
+
+<img src = "https://i.imgur.com/fJybgQy.png" height="80%" width = "80%" /> 
 
 Creating default local account
-https://i.imgur.com/MyVXx1Z.png
+
+<img src = "https://i.imgur.com/MyVXx1Z.png" height="80%" width = "80%" /> 
 
 ### Connecting to the Domain
-https://imgur.com/MNyOMXM
-https://imgur.com/rl45KP5
-https://imgur.com/wWRUdRR
-https://imgur.com/gwBlhEt
+
+<img src = "https://imgur.com/MNyOMXM.png" height="80%" width = "80%" /> 
+<img src = "https://imgur.com/rl45KP5.png" height="80%" width = "80%" /> 
+<img src = "https://imgur.com/wWRUdRR.png" height="80%" width = "80%" /> 
+<img src = "https://imgur.com/gwBlhEt.png" height="80%" width = "80%" /> 
 
 Logging into the domain with the user account 
 
-https://imgur.com/CIgJAZT
-https://imgur.com/dNpG8xq
+<img src = "https://imgur.com/CIgJAZT.png" height="80%" width = "80%" /> 
+<img src = "https://imgur.com/dNpG8xq.png" height="80%" width = "80%" /> 
 
 Client1 is now apart of the domain. We will now add it to the domain computers OU since this current folder is only a container and we cannot link GPOs to them.
 
-https://imgur.com/VkBotBd
-https://imgur.com/9Ff0Ser
-https://imgur.com/iHgmpvP
-https://imgur.com/xQa1v1H
+<img src = "https://imgur.com/VkBotBd.png" height="80%" width = "80%" /> 
+<img src = "https://imgur.com/9Ff0Ser.png" height="80%" width = "80%" /> 
+<img src = "https://imgur.com/iHgmpvP.png" height="80%" width = "80%" /> 
+<img src = "https://imgur.com/xQa1v1H.png" height="80%" width = "80%" /> 
+
+### Verifying Network Connectivity and Functionality
+
+Using the ipconfig command, we can verify that the machine has been assigned a valid IP address, along with a configured default gateway and subnet mask, confirming proper network configuration. Additionally, using the ping command to ping google.com demonstrates successful DNS resolution, therefore we can conclude that the machine has internet connectivity.
+
+<img src = "https://imgur.com/0Bx9poM.png" height="80%" width = "80%" /> 
+
