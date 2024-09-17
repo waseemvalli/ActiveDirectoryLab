@@ -538,7 +538,10 @@ Client1 is now apart of the domain. We will now add it to the domain computers O
 
 ### Verifying Network Connectivity and Functionality
 
-Using the ipconfig command, we can verify that the machine has been assigned a valid IP address, along with a configured default gateway and subnet mask, confirming proper network configuration. Additionally, using the ping command to ping google.com demonstrates successful DNS resolution, therefore we can conclude that the machine has internet connectivity.
+Using the ipconfig command, we can verify that the machine has been assigned a valid IP address, along with a configured default gateway and subnet mask, confirming correct network configuration. Additionally, using the ping command to ping google.com demonstrates successful DNS resolution, therefore we can conclude that the machine has internet connectivity.
 
 <img src = "https://imgur.com/0Bx9poM.png" height="80%" width = "80%" /> 
 
+## Conclusion of setup 
+
+The network has been successfully established, with the domain controller managing key networking services, including DHCP, DNS, and routing for the client machine to access the Internet. The remainder of this document will focus on exploring and experimenting with Active Directory, using it as a learning tool to further my understanding of its features and functionality.
