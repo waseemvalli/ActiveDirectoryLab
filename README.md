@@ -299,7 +299,7 @@ Since this is our own account in a lab environment, we won’t require the user 
 
 <img src = "https://imgur.com/wIOFQw9.png" height="80%" width = "80%" /> <br/>
 
-We have now created an account, but it is not yet recognised as an admin account and does not have administrative permissions. To grant the necessary permissions, we will proceed with the following steps: <br/>
+We have now created an account, but it is not yet recognised as an admin account and does not have administrative permissions. To grant the necessary permissions, we will proceed with the following steps <br/>
 <br/>
 
 <img src = "https://imgur.com/FvyvxOu.png" height="80%" width = "80%" /> 
@@ -326,11 +326,11 @@ Routing is a service within the Remote Access role.
 
 <img src = "https://imgur.com/lus04jZ.png" height="80%" width = "80%" /> 
 
-Selecting Routing here will also automatically select RAS 
+Selecting Routing here will also automatically select RAS.
 
 <img src = "https://imgur.com/8vjrnHN.png" height="80%" width = "80%" /> 
 
-These are all the default selections. We will leave them as they are.
+We will keep these default selections without making any changes.
 
 <img src = "https://imgur.com/YGENifY.png" height="80%" width = "80%" /> 
 
@@ -338,13 +338,13 @@ These are all the default selections. We will leave them as they are.
 <img src = "https://imgur.com/IsU8oL3.png" height="80%" width = "80%" /> 
 
 
-After it has been installed we will go to configure it.
+After installation, we will proceed to configure it.
 
 <img src = "https://imgur.com/X9q3Fqd.png" height="80%" width = "80%" /> 
 
 <img src = "https://imgur.com/PYDbrcR.png" height="80%" width = "80%" /> 
 
-Here we will select NAT
+Here we will select NAT.
 
 <img src = "https://imgur.com/7O7mpMj.png" height="80%" width = "80%" /> 
 
@@ -364,11 +364,11 @@ First we navigate to the add role wizard and select DHCP.
 
 <img src = "https://imgur.com/4fBjTk4.png" height="80%" width = "80%" /> 
 
-The wizard has automatically selected this feature as a requirement we will not add any further features.
+The wizard has automatically selected this feature as a requirement; we will not add any additional features.
 
 <img src = "https://imgur.com/7ITi5xT.png" height="80%" width = "80%" /> 
 
-Here we are confirming the installation.
+Confirming the installation.
 
 <img src = "https://imgur.com/BowqYbk.png" height="80%" width = "80%" /> 
 
@@ -376,43 +376,42 @@ Now that DHCP has been installed we can configure by selecting DHCP from the too
 
 <img src = "https://imgur.com/eE5kYnt.png" height="80%" width = "80%" /> 
 
-First we will create an IP scope.
+First, we will create an IP scope. This defines the pool of IP addresses available for our client machines.
 
 <img src = "https://imgur.com/7cLRJqo.png" height="80%" width = "80%" /> 
 
-Here we are naming the scope. I have used our DHCP range as the scope's name for simplicity.
+Here, we are naming the scope. For simplicity, I have used our DHCP range as the scope's name.
 
 <img src = "https://imgur.com/yZ7b6Jl.png" height="80%" width = "80%" /> 
 
-We are defining the scope range. 
+We are defining the scope range, which will provide us with 100 IP addresses available for potential client computers.
 
 <img src = "https://imgur.com/yQc4iYT.png" height="80%" width = "80%" /> 
 
-There are not any IP addresses we want to exclude from being given out in the range so we will not make any changes here.
+There are no IP addresses we need to exclude from the range, so we will not make any changes in this section.
 
 <img src = "https://imgur.com/FHVFW3y.png" height="80%" width = "80%" /> 
 
-Lease duration. This is how long an IP address is assigned to a client before it must be renewed.
+Lease duration: This is the period for which an IP address is assigned to a client before it must be renewed. I have selected 9 hours here, but it is not of high importance in our environment, as we only have one client machine and do not face the risk of running out of IP addresses. In contrast, in a coffee shop, the lease duration would likely be set to 1 or 2 hours to prevent depleting available IP addresses due to the high turnover of customers.
 
 
 <img src = "https://imgur.com/mgHtrvP.png" height="80%" width = "80%" /> 
 
-We also want to Configure our default gateway so we will select configure now.
+We also need to configure our default gateway, so we will select the 'Configure Now' option.
 
 <img src = "https://imgur.com/uKepfJv.png" height="80%" width = "80%" /> 
 
 
-Our domain controller will act as the default gateway so we will use it's IP address.
+Our domain controller will act as the default gateway so we will use its IP address.
 
 <img src = "https://imgur.com/69FGFWd.png" height="80%" width = "80%" /> 
 
-Our domain controller will also resolve DNS requests so we will use it as our parent domain.
+Our domain controller will also resolve DNS requests so we will select it as our parent domain.
 
 
 <img src = "https://imgur.com/K2Wy3VS.png" height="80%" width = "80%" /> 
 
-We are not using WINS so we will not change anything here.
-
+We are not using WINS, so no changes will be made here.
 
 <img src = "https://imgur.com/Ugka6ps.png" height="80%" width = "80%" /> 
 
@@ -421,11 +420,11 @@ We are not using WINS so we will not change anything here.
 
 <img src = "https://imgur.com/zVOArid.png" height="80%" width = "80%" /> 
 
-Our scope has been created but it is not activated. In order to do so we must authorise our DC.
+Our scope has been created but is not yet activated. To activate it, we need to authorise our Domain Controller.
 
 <img src = "https://imgur.com/iib0ywX.png" height="80%" width = "80%" /> 
 
-Now it has been activated and we have a working IP scope.
+Now that it has been activated, we have a functioning IP scope.
 
 <img src = "https://imgur.com/MSiDukp.png" height="80%" width = "80%" /> 
 
@@ -434,23 +433,24 @@ The Domain Controller is now completely configured and has all the requirements 
 ## Creating OUs and Users 
 
 
-Creating a few new organisational units to store the new users.
+Creating a new organisational unit (OU) named 'Mango', which will serve as the parent OU for all subsequent OUs.
+
 
 <img src = "https://i.imgur.com/XS68x8W.png" height="80%" width = "80%" /> 
 <img src = "https://i.imgur.com/MsBpFXR.png" height="80%" width = "80%" /> 
 
-Creating two new OUs called domain users and domain computers within the Mango OU.
+Creating two new organisational units (OUs) named 'Domain Users' and 'Domain Computers' within the 'Mango' OU.
 
 <img src = "https://i.imgur.com/K8SdEur.png" height="80%" width = "80%" /> 
 <img src = "https://i.imgur.com/VeVSmOR.png" height="80%" width = "80%" /> 
 
-Creating the first user within the domain users OU.
+Creating the first regular user within the Domain Users organisational unit.
 
 <img src = "https://i.imgur.com/tej3tpL.png" height="80%" width = "80%" /> 
 <img src = "https://i.imgur.com/zAOjhgV.png" height="80%" width = "80%" /> 
 
 
-Setting the password. In an actual professional environment would check change password at next logon.
+Setting the password. In a professional environment, the 'User must change password at next logon' option is typically selected to ensure IT staff does not have access to user accounts, maintaining security and privacy.
 
 <img src = "https://i.imgur.com/xJh46iK.png" height="80%" width = "80%" /> 
 <img src = "https://i.imgur.com/svkXMnG.png" height="80%" width = "80%" /> 
@@ -465,7 +465,7 @@ Creating the 2nd VM using the .ISO file using the windows media creation tool wh
 
 <img src = "https://i.imgur.com/bTVlAy8.png" height="80%" width = "80%" /> 
 
-Allocating resources
+Allocating resources for the virtual machine. 
 
 <img src = "https://i.imgur.com/8CqbwkG.png" height="80%" width = "80%" /> 
 <img src = "https://i.imgur.com/q0h4oCm.png" height="80%" width = "80%" /> 
@@ -496,7 +496,7 @@ Since this is a fresh installation and not an upgrade, we will select the custom
 
 <img src = "https://i.imgur.com/PcbdCq1.png" height="80%" width = "80%" /> 
 
-After a few restarts, Windows presents us with a few preference-based options.
+After a few restarts, Windows presents us with a few preference-based settings.
 
 
 <img src = "https://i.imgur.com/Vjd2Exz.png" height="80%" width = "80%" /> 
@@ -529,12 +529,12 @@ Windows has been installed on the client virtual machine. This section will cove
 <img src = "https://imgur.com/wWRUdRR.png" height="80%" width = "80%" /> 
 <img src = "https://imgur.com/gwBlhEt.png" height="80%" width = "80%" /> 
 
-Logging into the domain with the user account 
+Logging into the domain using the designated user account
 
 <img src = "https://imgur.com/CIgJAZT.png" height="80%" width = "80%" /> 
 <img src = "https://imgur.com/dNpG8xq.png" height="80%" width = "80%" /> 
 
-Client1 is now apart of the domain. We will now add it to the domain computers OU since this current folder is only a container and we cannot link GPOs to them.
+Client1 is now connected to the domain. Next, we will move it to the Domain Computers OU, as the current folder is merely a container and does not support linking Group Policy Objects.
 
 <img src = "https://imgur.com/VkBotBd.png" height="80%" width = "80%" /> 
 <img src = "https://imgur.com/9Ff0Ser.png" height="80%" width = "80%" /> 
