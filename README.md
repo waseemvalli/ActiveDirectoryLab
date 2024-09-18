@@ -6,7 +6,7 @@
   <ol>
     <li><a href="#about-this-project">About this project</a>
     <ul>
-      <li><a href="#languages-and-utilities"> Languages and Utilities</a></li>
+      <li><a href="#environments-and-utilities"> Environments and Utilities</a></li>
     </ul>
     <li><a href="#creating-the-domain-controller-system">Creating the Domain Controller System</a>
         <ul>
@@ -52,9 +52,9 @@ This self-study project involves setting up a small-scale network consisting of 
 <br />
 
 
-## Languages and Utilities 
+## Environments and Utilities 
 
-- <b>VirtualBox</b>
+- <b>Oracle VirtualBox</b>
 - <b>Microsoft Server 2019<b/>
 - <b>Active Directory<b/>
 
@@ -174,7 +174,7 @@ The network adapter has a default gateway, meaning it can connect to external ne
 <br/>
 <img src = "https://imgur.com/oXaPu44.png" height="80%" width = "80%" /> 
 
-The network adapter does not have a default gateway and has an APIPA-assigned IP address, indicating there is no DHCP server available.Also there isn't a DNS server configured. This all indicates that this adapter is for our internal network. <br/>
+The network adapter lacks a default gateway and has been assigned an APIPA IP address, indicating the absence of a DHCP server. Additionally, there is no DNS server configured, further confirming that this adapter is designated for our internal network.  <br/>
 <br/>
 <img src = "https://imgur.com/VUwkLUj.png" height="80%" width = "80%" /> 
 
@@ -188,7 +188,7 @@ Our adapters are now renamed and can be differentiated. Next we will configure o
 <br/>
 <img src = "https://imgur.com/HTB2nc4.png" height="80%" width = "80%" /> 
 
-Then selecting IPv4 and going into properties.<br/>
+Next, we select IPv4 and navigate to its properties. <br/>
 <br/>
 <img src = "https://imgur.com/O9qnfAw.png" height="80%" width = "80%" /> 
 
