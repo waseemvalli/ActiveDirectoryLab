@@ -550,3 +550,42 @@ Using the ipconfig command, we can verify that the machine has been assigned a v
 ## Conclusion of setup 
 
 The network has been successfully established, with the domain controller managing key networking services such as DHCP, DNS, and routing to enable the client machine's Internet access. The remainder of this repository will focus on standard administrative tasks in Active Directory, while also exploring and experimenting with it as a learning tool to further my understanding of its features and functionality.
+
+
+## Resetting a User's Password
+
+Using the find an object feature 
+
+https://imgur.com/IlcXjao
+
+
+Two results must differeniate the two accounts by heading into properties. We dont want to reset the admin password for this example.
+
+https://imgur.com/undefined
+
+This is the domain user account so we can proceed with resetting the password.
+
+https://imgur.com/strrx5d
+
+Right click reset password
+
+https://imgur.com/sWiHTRS
+
+Resetting password wizard
+
+https://imgur.com/v460ztG
+
+Password change successful
+
+https://imgur.com/rEYZhkC
+
+## Creating and linking group policies
+
+
+Created ous and users for easier organisation
+
+https://imgur.com/AxCSBUa
+
+Placed a user within each group
+
+https://imgur.com/WfkbyTJ
